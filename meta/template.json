@@ -1,0 +1,259 @@
+{
+    "id": "4352",
+    "name": "Multi-City Event Template",
+    "mobile": true,
+    "notes": "Changed social icons in footer to share links.",
+    "syntax": 4,
+    "version": 1.02,
+    "style": {
+        "replacements": [
+            {"type": "font", "name": "General Text", "find": "'Source Sans Pro'"},
+            {"type": "font", "name": "Titles", "find": "'Comfortaa'"},
+
+            {"type": "color", "find": "#000001", "name": "General Text Color"},
+            {"type": "color", "find": "#6818a5", "name": "Accent Color #1"},
+            {"type": "color", "find": "#46bec2", "name": "Accent Color #2"},
+            {"type": "color", "find": "#feffff", "name": "Button Text & Hover"},
+
+            {"type": "color", "find": "#fffeff", "name": "Banner Text"},
+            {"type": "color", "find": "#2e1046", "name": "Banner Background (No Image)"},
+
+            {"type": "color", "find": "#fffffe", "name": "About Background"},
+
+            {"type": "color", "find": "#fefeff", "name": "Profiles Text & Box Background"},
+            {"type": "color", "find": "#282829", "name": "Profiles Background & Box Text"},
+
+            {"type": "color", "find": "#fefffe", "name": "Agenda Background"},
+
+            {"type": "color", "find": "#2e1045", "name": "Locations Background"},
+            {"type": "color", "find": "#fffefe", "name": "Locations Text & Box Background"},
+            {"type": "color", "find": "#282928", "name": "Locations Box Text"},
+
+            {"type": "color", "find": "#fdfefe", "name": "FAQ Background"},
+
+            {"type": "color", "find": "#292828", "name": "Footer Background"},
+            {"type": "color", "find": "#fefdfe", "name": "Footer Text"},
+            {"type": "color", "find": "#8afffc", "name": "Footer Links"}
+        ]
+    },
+    "variables": {
+        "facebookCommentsURL": {
+          "variable": "facebookCommentsURL",
+          "dafault": "http://leadpages.net",
+          "name": "The URL to read and write comments on Facebook."
+        },
+        "facebookShareURL": {
+            "variable": "facebookShareURL",
+            "dafault": "",
+            "name": "The URL to share on Facebook. Leave blank to share the current page."
+        },
+        "twitterShareURL": {
+            "variable": "twitterShareURL",
+            "dafault": "",
+            "name": "The URL to share on Twitter. Leave blank to share the current page."
+        },
+        "googleShareURL": {
+            "variable": "googleShareURL",
+            "dafault": "",
+            "name": "The URL to share on Google+. Leave blank to share the current page."
+        },
+        "linkedInShareURL": {
+            "variable": "linkedInShareURL",
+            "dafault": "",
+            "name": "The URL to share on LinkedIn. Leave blank to share the current page."
+        }
+    },
+    "elements": [
+        {"id": "banner", "name": "Banner", "type": "container"},
+        {"id": "banner-bg", "name": "Banner Image", "type": "background-image"},
+        {"id": "global-nav", "name": "Navigation", "type": "container"},
+        {"id": "nav-link-1", "name": "Link 1 (#section1)", "type": "link"},
+        {"id": "nav-link-2", "name": "Link 2 (#section2)", "type": "link"},
+        {"id": "nav-link-3", "name": "Link 3 (#section3)", "type": "link"},
+        {"id": "nav-link-4", "name": "Link 4 (#section4)", "type": "link"},
+        {"id": "nav-link-5", "name": "Link 5 (#section5)", "type": "link"},
+        {"id": "logo", "type": "image-link", "name": "Logo", "data": { "max-width": 355 } },
+        {"id": "banner-text", "name": "Text", "type": "text"},
+        {"id": "banner-line", "name": "Line", "type": "container"},
+        {"id": "banner-list", "name": "List", "type": "text"},
+        {"id": "banner-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+
+
+        {"id": "about", "name": "About", "type": "container"},
+        {"id": "about-left", "name": "Left Column", "type": "container"},
+        {"id": "about-title", "name": "Title", "type": "text"},
+        {"id": "about-text", "name": "Text", "type": "text"},
+        {"id": "about-right", "name": "Right Column", "type": "container"},
+        {"id": "about-video", "name": "Video", "type": "video"},
+
+
+
+        {"id": "profiles", "name": "Profiles", "type": "container"},
+        {"id": "profiles-title", "name": "Title", "type": "text"},
+        {"id": "profiles-text", "name": "Text", "type": "text"},
+
+        {"id": "profiles-1", "name": "Profile #1", "type": "container"},
+        {"id": "profiles-1-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "profiles-1-title", "name": "Title", "type": "text"},
+        {"id": "profiles-1-line", "name": "Line", "type": "container"},
+        {"id": "profiles-1-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "profiles-1-text", "name": "Text", "type": "text"},
+        {"id": "profiles-1-contact", "name": "Social Media", "type": "container"},
+        {"id": "profiles-1-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profiles-1-facebook-link", "name": "Facebook Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-1-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profiles-1-twitter-link", "name": "Twitter Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-1-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profiles-1-linkedin-link", "name": "LinkedIn Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-1-google", "name": "Google Plus Icon", "type": "container"},
+        {"id": "profiles-1-google-link", "name": "Google Plus Link", "type": "link", "data": { "target": "_blank" } },
+
+        {"id": "profiles-2", "name": "Profile #2", "type": "container"},
+        {"id": "profiles-2-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "profiles-2-title", "name": "Title", "type": "text"},
+        {"id": "profiles-2-line", "name": "Line", "type": "container"},
+        {"id": "profiles-2-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "profiles-2-text", "name": "Text", "type": "text"},
+        {"id": "profiles-2-contact", "name": "Social Media", "type": "container"},
+        {"id": "profiles-2-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profiles-2-facebook-link", "name": "Facebook Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-2-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profiles-2-twitter-link", "name": "Twitter Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-2-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profiles-2-linkedin-link", "name": "LinkedIn Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-2-google", "name": "Google Plus Icon", "type": "container"},
+        {"id": "profiles-2-google-link", "name": "Google Plus Link", "type": "link", "data": { "target": "_blank" } },
+
+        {"id": "profiles-3", "name": "Profile #3", "type": "container"},
+        {"id": "profiles-3-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "profiles-3-title", "name": "Title", "type": "text"},
+        {"id": "profiles-3-line", "name": "Line", "type": "container"},
+        {"id": "profiles-3-subtitle", "name": "Subtitle", "type": "text"},
+        {"id": "profiles-3-text", "name": "Text", "type": "text"},
+        {"id": "profiles-3-contact", "name": "Social Media", "type": "container"},
+        {"id": "profiles-3-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profiles-3-facebook-link", "name": "Facebook Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-3-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profiles-3-twitter-link", "name": "Twitter Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-3-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profiles-3-linkedin-link", "name": "LinkedIn Link", "type": "link", "data": { "target": "_blank" } },
+        {"id": "profiles-3-google", "name": "Google Plus Icon", "type": "container"},
+        {"id": "profiles-3-google-link", "name": "Google Plus Link", "type": "link", "data": { "target": "_blank" } },
+
+
+
+        {"id": "agenda", "name": "Agenda", "type": "container"},
+        {"id": "agenda-title", "name": "Title", "type": "text"},
+        {"id": "agenda-text", "name": "Text", "type": "text"},
+
+        {"id": "agenda-col-1", "name": "Column #1", "type": "container"},
+        {"id": "agenda-1", "name": "Task #1", "type": "container"},
+        {"id": "agenda-1-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-1-time", "name": "Time", "type": "text"},
+        {"id": "agenda-1-description", "name": "Description", "type": "text"},
+        {"id": "agenda-2", "name": "Task #2", "type": "container"},
+        {"id": "agenda-2-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-2-time", "name": "Time", "type": "text"},
+        {"id": "agenda-2-description", "name": "Description", "type": "text"},
+        {"id": "agenda-3", "name": "Task #3", "type": "container"},
+        {"id": "agenda-3-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-3-time", "name": "Time", "type": "text"},
+        {"id": "agenda-3-description", "name": "Description", "type": "text"},
+        {"id": "agenda-4", "name": "Task #4", "type": "container"},
+        {"id": "agenda-4-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-4-time", "name": "Time", "type": "text"},
+        {"id": "agenda-4-description", "name": "Description", "type": "text"},
+
+        {"id": "agenda-col-2", "name": "Column #2", "type": "container"},
+        {"id": "agenda-5", "name": "Task #5", "type": "container"},
+        {"id": "agenda-5-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-5-time", "name": "Time", "type": "text"},
+        {"id": "agenda-5-description", "name": "Description", "type": "text"},
+        {"id": "agenda-6", "name": "Task #6", "type": "container"},
+        {"id": "agenda-6-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-6-time", "name": "Time", "type": "text"},
+        {"id": "agenda-6-description", "name": "Description", "type": "text"},
+        {"id": "agenda-7", "name": "Task #7", "type": "container"},
+        {"id": "agenda-7-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-7-time", "name": "Time", "type": "text"},
+        {"id": "agenda-7-description", "name": "Description", "type": "text"},
+        {"id": "agenda-8", "name": "Task #8", "type": "container"},
+        {"id": "agenda-8-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-8-time", "name": "Time", "type": "text"},
+        {"id": "agenda-8-description", "name": "Description", "type": "text"},
+
+        {"id": "agenda-col-3", "name": "Column #3", "type": "container"},
+        {"id": "agenda-9", "name": "Task #9", "type": "container"},
+        {"id": "agenda-9-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-9-time", "name": "Time", "type": "text"},
+        {"id": "agenda-9-description", "name": "Description", "type": "text"},
+        {"id": "agenda-10", "name": "Task #10", "type": "container"},
+        {"id": "agenda-10-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-10-time", "name": "Time", "type": "text"},
+        {"id": "agenda-10-description", "name": "Description", "type": "text"},
+        {"id": "agenda-11", "name": "Task #11", "type": "container"},
+        {"id": "agenda-11-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-11-time", "name": "Time", "type": "text"},
+        {"id": "agenda-11-description", "name": "Description", "type": "text"},
+        {"id": "agenda-12", "name": "Task #12", "type": "container"},
+        {"id": "agenda-12-icon", "name": "Icon", "type": "container"},
+        {"id": "agenda-12-time", "name": "Time", "type": "text"},
+        {"id": "agenda-12-description", "name": "Description", "type": "text"},
+
+
+
+        {"id": "cta", "name": "Locations", "type": "container"},
+        {"id": "cta-bg", "name": "Background Image", "type": "background-image"},
+        {"id": "cta-title", "name": "Title", "type": "text"},
+        {"id": "cta-text", "name": "Text", "type": "text"},
+
+        {"id": "cta-1", "name": "Location #1", "type": "container"},
+        {"id": "cta-1-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "cta-1-title", "name": "Title", "type": "text"},
+        {"id": "cta-1-line", "name": "Line", "type": "container"},
+        {"id": "cta-1-text", "name": "Text", "type": "text"},
+        {"id": "cta-1-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "cta-2", "name": "Location #2", "type": "container"},
+        {"id": "cta-2-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "cta-2-title", "name": "Title", "type": "text"},
+        {"id": "cta-2-line", "name": "Line", "type": "container"},
+        {"id": "cta-2-text", "name": "Text", "type": "text"},
+        {"id": "cta-2-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "cta-3", "name": "Location #3", "type": "container"},
+        {"id": "cta-3-img", "name": "Image", "type": "image", "data": { "max-width": 353 } },
+        {"id": "cta-3-title", "name": "Title", "type": "text"},
+        {"id": "cta-3-line", "name": "Line", "type": "container"},
+        {"id": "cta-3-text", "name": "Text", "type": "text"},
+        {"id": "cta-3-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+
+
+        {"id": "faq", "name": "FAQs", "type": "container"},
+        {"id": "faq-title", "name": "Title", "type": "text"},
+        {"id": "faq-text", "name": "Text", "type": "text"},
+        {"id": "faq-list", "name": "FAQ List", "type": "text"},
+
+
+
+        {"id": "footer", "name": "FAQs", "type": "container"},
+        {"id": "footer-logo", "type": "image-link", "name": "Logo", "data": { "max-width": 355 } },
+        {"id": "social-media", "name": "Social Media", "type": "container"},
+        {"id": "social-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "social-facebook-hex", "name": "Hexagon Graphic", "type": "container"},
+        {"id": "social-facebook-link", "type": "dynamic", "name": "Facebook Share Link", "data": { "variables": ["facebookShareURL"] } },
+        {"id": "social-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "social-twitter-hex", "name": "Hexagon Graphic", "type": "container"},
+        {"id": "social-twitter-link", "type": "dynamic", "name": "Twitter Share Link", "data": { "variables": ["twitterShareURL"] } },
+        {"id": "social-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "social-linkedin-hex", "name": "Hexagon Graphic", "type": "container"},
+        {"id": "social-linkedin-link", "type": "dynamic", "name": "LinkedIn Share Link", "data": { "variables": ["linkedInShareURL"] } },
+        {"id": "social-google", "name": "Google Plus Icon", "type": "container"},
+        {"id": "social-google-hex", "name": "Hexagon Graphic", "type": "container"},
+        {"id": "social-google-link", "type": "dynamic", "name": "Google+ Share Link", "data": { "variables": ["googleShareURL"] } },
+        {"id": "footer-text", "name": "Legal Text", "type": "text"}
+    ],
+    "form": {}
+}
